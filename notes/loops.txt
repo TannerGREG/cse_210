@@ -1,0 +1,57 @@
+This file goes over different loops and random numbers
+------------------------------------------------
+While loops (work the same as in python)
+
+string response = "yes";
+
+while (response == "yes")
+{
+    Console.Write("Do you want to continue? ");
+    response = Console.ReadLine();
+}
+
+-------------------------------------------------
+
+Do-While Loop 
+It runs the body of the loop once before the check is made
+
+string response;
+do
+{
+    Console.Write("Do you want to continue? ");
+    response = Console.ReadLine();
+} while (response == "yes");
+
+---------------------------------------------------
+
+For Loop (similar to "for x in range" loop in python)
+The condition has three parts, separated by semi-colons.
+The first initializes the value, the second is the condition to check, and the third is an increment step that is run at the end of each loop.
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+}
+// this is a for loop that counts from 0 to 9 using ++ to increment the value up by once
+for (int i = 2; i <= 20; i = i + 2)
+{
+    Console.WriteLine(i);
+}
+// this for loop counts from 2 to 20 by two'same
+
+-------------------------------------------------------
+
+For Each Loop (similar to python just remember to define teh iteator variable type)
+
+foreach (string color in colors)
+{
+    Console.WriteLine(color);
+}
+
+-------------------------------------------------------
+
+Random numbers
+In addition, for this assignment you'll need to get a random number from the computer. In C#, this is done by creating an instance of the Random class, and then using it to get the next integer in a particular range.
+
+Random randomGenerator = new Random();
+int number = randomGenerator.Next(1, 11);

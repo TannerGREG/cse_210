@@ -11,5 +11,20 @@ class Program
         string last = Console.ReadLine();
 
         Console.WriteLine($"Your name is {last}, {first} {last}. ");
+
+        try
+        {
+            int numerator = 10;
+            int denominator = 0;
+            int result = numerator/denominator;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("Oops something happened");
+            Console.WriteLine (e.ToString());
+        }
     }
 }
+/* 
+whats up my dueds
+*/

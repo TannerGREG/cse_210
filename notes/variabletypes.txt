@@ -1,0 +1,18 @@
+int - Integers (whole numbers, positive and negative)
+string - Strings (a sequence of characters, including letters, numbers, or symbols)
+float - Floating point numbers (numbers that use decimals)
+double - Double precision floating point numbers (just like a float, except it takes up twice as much memory, so it can hold larger numbers or numbers with more decimal places)
+bool - Boolean variables (true or false)
+-----------------------------------------
+String to Integer
+string valueInText = "42";
+int number = int.Parse(valueInText);
+-----------------------------------------
+Numbers to strings
+int number = 42;
+string textVersion = number.ToString();
+-----------------------------------------
+Interpulating a variable into a string
+string variableADD = "tanner"
+console.WriteLine($"my name is {variableADD}");
+----------------------------------------------

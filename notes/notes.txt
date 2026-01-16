@@ -1,0 +1,5 @@
+List<string> theList = new List<int>();
+//theList.Add(1);
+theList.add("hello")
+Size(Count)
+Get(index)
